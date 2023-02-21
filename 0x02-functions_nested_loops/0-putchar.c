@@ -10,7 +10,7 @@
 int main(void)
 {
 /**
-*using for loop to solve the problem
+*Desc: using for loop to solve the problem
 *
 *  int i;
 *	char p[] = "_putchar";
@@ -21,7 +21,6 @@ int main(void)
 *		}
 *		_putchar('\n');
 */
-
 	_putchar('_');
 	_putchar('p');
 	_putchar('u');
