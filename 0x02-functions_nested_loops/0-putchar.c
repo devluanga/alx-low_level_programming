@@ -9,18 +9,6 @@
 
 int main(void)
 {
-/**
-*Desc: using for loop to solve the problem
-*
-*  int i;
-*	char p[] = "_putchar";
-*
-*	for (i = 0; i < 9; i++)
-*		{
-*		_putchar(p[i]);
-*		}
-*		_putchar('\n');
-*/
 	_putchar('_');
 	_putchar('p');
 	_putchar('u');
