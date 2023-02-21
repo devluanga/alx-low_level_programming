@@ -2,11 +2,10 @@
 
 void print_alphabet(void)
 {
-	int x;
+	char letter;
 
-	for (x = 'a'; x < 'z'; x++)
-		{
-		_putchar(x);
-		}
-		_putchar('\n');
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+
+	_putchar('\n');
 }
