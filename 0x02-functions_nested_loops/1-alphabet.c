@@ -1,11 +1,18 @@
 #include "main.h"
 
+/**
+* 
+* print_alphabet - Entry
+* 
+*/
 void print_alphabet(void)
 {
-	char letter;
+	int x;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		_putchar(letter);
-
+	for (x = 'a'; x <= 'z'; x++)
+	{
+		_putchar(x);
+	}
 	_putchar('\n');
 }
+
