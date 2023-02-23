@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *main - test if the function prints positve or negative
- *
- *Return: always 0
- */
+*main - test if the function prints positve or negative
+*
+*Return: always 0
+*/
 int main(void)
 {
 	int x = 0;
