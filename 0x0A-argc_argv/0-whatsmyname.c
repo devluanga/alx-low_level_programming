@@ -7,16 +7,9 @@
  **/
 int main(int argc, char *argv[])
 {
-	char *program_name = strrchr(argv[0], '/');
+	char *program_name;
 
-	if (program_name == NULL)
-	{
-		program_name = argv[0];
-	}
-	else
-	{
-		program_name++;
-	}
+	program_name = argv[0];
 	printf("%s\n", program_name);
 	return (0);
 }
