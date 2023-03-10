@@ -1,36 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+
 /**
- * main - multiply two numbers
- * @argc: arguement count
- * @argv: array of pointers to arguement strings
- * Return: result of multiplication or 1
- **/
+ * main - Prints the addition of positive numbers,
+ *        followed by a new line.
+ * @argc: The number of arguments passed to the program.
+ * @argv: An array of pointers to the arguments.
+ *
+ * Return: If one of the numbers contains symbols that are non-digits - 1.
+ *         Otherwise - 0.
+ */
 int main(int argc, char *argv[])
 {
-	int x, sum = 0;
+	int num, digit, sum = 0;
 
-	/*check if there value provided for argc is 0*/
-	if (argc == 0)
+	for (num = 1; num < argc; num++)
 	{
-		printf("0\n");
-		return (0);
-	}
-	for (x = 0; x < argc; x++)
-		int y = 0;
-	{
-		while (argv[x][y])
+		for (digit = 0; argv[num][digit]; digit++)
 		{
-			if (!isdigit(argv[x][y]))
+			if (argv[num][digit] < '0' || argv[num][digit] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
-			y++;
 		}
-		/*use atoi()to convert values to integers*/
-		sum += atoi(argv[x]);
+
+		sum += atoi(argv[num]);
 	}
+
+	printf("%d\n", sum);
+
 	return (0);
 }
