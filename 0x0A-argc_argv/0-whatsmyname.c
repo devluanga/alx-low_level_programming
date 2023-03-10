@@ -7,7 +7,16 @@
  **/
 int main(int argc, char *argv[])
 {
-	argc = argc;
-	printf("%s\n", *argv);
+	char *program_name = strrchr(argv[0], '/');
+
+	if (program_name == NULL)
+	{
+		program_name = argv[0];
+	}
+	else
+	{
+		program_name++;
+	}
+	printf("%s\n", program_name);
 	return (0);
 }
