@@ -1,4 +1,4 @@
 #ifndef sum_func
-#define sum func
-#define SUM(x<F12>, y) ((x) + (y))
+#define sum_func
+#define SUM(x, y) ((x) + (y))
 #endif
