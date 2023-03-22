@@ -22,12 +22,11 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	 *The for loop in this implementation uses the size_t data type
 	 *to keep track of the current index of the array.
 	 */
-	if (array == NULL || size == 0 || action == NULL)
+	unsigned int i;
+
+	if (array != NULL && size > 0 && action != NULL)
 	{
-		return;
-	}
-	for (unsigned int i = 0; i < size; i++)
-	{
-		(*action)(array[i]);
+		for (i = 0; i < size; i++)
+			action(array[i]);
 	}
 }
