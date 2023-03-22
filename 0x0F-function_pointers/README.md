@@ -4,6 +4,7 @@ This directory provides for all the function pointer projects
 In C, a function pointer is a variable that stores the address of a function. It can be used to call the function indirectly, or to pass the function as an argument to another function. Function pointers can be very useful in certain programming scenarios, such as when implementing callbacks or event handlers.
 
 Here's an example of how to declare a function pointer:
+
 	int (*myFunctionPointer)(int, int);
 
 
