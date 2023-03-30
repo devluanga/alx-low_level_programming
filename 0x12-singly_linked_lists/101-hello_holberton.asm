@@ -1,26 +1,17 @@
-/**
- *Desc: 64-bit assembly program that prints
- *    Hello, Holberton followed by a new line.
- */
-
 extern printf
+	section .data
+msg:	 db "Hello, Holberton", 0
+fmt:	 db "%s", 10, 0
 
-section .text
-   global main
-
+	section .text
+	global main
 main:
-   push rbp
+	push rbp
+	mov rdi,fmt
+	mov rsi,msg
+	mov rax,0
+	call printf
 
-   mov rdi,fmt
-   mov rsi,msg
-   mov rax,0
-   call printf
-
-   pop rbp
-
-   mov rax,0
-   ret
-
-section .data
-   msg: db "Hello, Holberton", 0
-   fmt: db "%s", 10, 0
+	pop rbp
+	mov rax,0
+	ret
