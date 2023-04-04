@@ -9,16 +9,27 @@
 void free_listint2(listint_t **head)
 {
 	listint_t *ptr = *head;
-	listint_t *temp;
 
-	while (ptr != NULL)
+	if (ptr == NULL)
 	{
-		temp = ptr;
-		temp = temp->next;
+		return;
 	}
-	ptr->next = NULL;
-	free(temp);
-	temp = NULL;
-	/*return (ptr);*/
-
+	else if (ptr->next == NULL)
+	{
+		free(ptr);
+		ptr = NULL;
+	}
+	else
+	{
+		/**
+		 *we need to traverse the list until we
+		 *	get to the second last node
+		 */
+		while (ptr->next->next != NULL)
+		{
+			ptr = ptr->next;
+		}
+		free(ptr->next);
+		ptr->next = NULL;
+	}
 }
