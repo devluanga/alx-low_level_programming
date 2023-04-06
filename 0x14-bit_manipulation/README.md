@@ -19,8 +19,11 @@ Example:
 
 		The result will be 0b1000, which is the binary representation of 8.
 
-			Bitwise OR (|):
-This operator compares each bit of two numbers and returns a new number where each bit is set to 1 if at least one of the corresponding bits in the original numbers is 1. Otherwise, the resulting bit is set to 0.
+Bitwise OR (|):
+	
+	This operator compares each bit of two numbers and returns a new number
+	where each bit is set to 1 if at least one of the corresponding bits in the original numbers is 1.
+	Otherwise, the resulting bit is set to 0.
 Example:
 				
 		int num1 = 0b1010; // Binary representation of 10
@@ -31,7 +34,9 @@ Example:
 		The result will be 0b1110, which is the binary representation of 14.
 
 Bitwise XOR (^):
-	This operator compares each bit of two numbers and returns a new number where each bit is set to 1 only if exactly one of the corresponding bits in the original numbers is 1. Otherwise, the resulting bit is set to 0.
+	This operator compares each bit of two numbers and returns a new number where 
+	each bit is set to 1 only if exactly one of the corresponding bits in the original numbers is 1.
+	Otherwise, the resulting bit is set to 0.
 Example:
 
 		int num1 = 0b1010; // Binary representation of 10
@@ -63,4 +68,6 @@ These operations are useful in many applications, such as:
 
 For example,
     
-    let's say you have a program that uses a set of flags to represent different settings. You can use a single integer variable to store these flags, where each bit in the integer represents a specific setting. You can then use bitwise operators
+    let's say you have a program that uses a set of flags to represent different settings.
+    You can use a single integer variable to store these flags,
+    where each bit in the integer represents a specific setting. You can then use bitwise operators
