@@ -8,8 +8,11 @@ Imagine you have a number written in binary, which is a series of 0s and 1s. For
 In C, you can use bitwise operators to manipulate individual bits of a number. Here are some common bitwise operators:
 
 
-				Bitwise AND (&): 
-	This operator compares each bit of two numbers and returns a new number where each bit is set to 1 only if both corresponding bits in the original numbers are 1. Otherwise, the resulting bit is set to 0.
+Bitwise AND (&):
+
+	This operator compares each bit of two numbers and returns a new number
+       	where each bit is set to 1 only if both corresponding bits in the original numbers are 1.
+       	Otherwise, the resulting bit is set to 0.
 Example:
 		
 		int num1 = 0b1010; // Binary representation of 10
@@ -58,13 +61,15 @@ Example:
 
 		
 These bitwise operators can be used to perform various bit manipulation tasks, such as:
-	*setting a specific bit to 1 or 0,
-	*flipping the value of a bit,
-       	*extracting the value of a particular bit from a number. 
+
+		*setting a specific bit to 1 or 0,
+		*flipping the value of a bit,
+       		*extracting the value of a particular bit from a number. 
 These operations are useful in many applications, such as:
-	>>working with binary data,
-	>>encoding/decoding,
-	>>and optimizing memory usage in embedded systems, among others.
+
+		>>working with binary data,
+		>>encoding/decoding,
+		>>and optimizing memory usage in embedded systems, among others.
 
 For example,
     
