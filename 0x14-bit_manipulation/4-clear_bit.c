@@ -10,12 +10,12 @@
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int numBits = sizeof(unsigned long int) * 8;
-	unsigned long int val;
+	unsigned long int val = 1UL << index;
 
 	if (index >= numBits)
 		return (-1);
-	
-	val  = ~(1UL << index);
+
+	val  = ~(val);
 
 	*n = *n & val;
 
