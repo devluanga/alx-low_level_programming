@@ -1,5 +1,6 @@
 #ifndef list
 #define llist
+/*prototype file*/
 
 #include <stdio.h>
 #include <stdlib.h>
