@@ -22,15 +22,20 @@ Key features of a doubly linked list:
 		a doubly linked list consumes slightly more memory compared to a singly linked list.
 
 Advantages of using a doubly linked list:
+
 	1. Bidirectional Traversal: Doubly linked lists allow efficient traversal 
 	in both forward and backward directions.
+	
 	2. Insertion and Deletion: Insertion and deletion operations can be performed in constant time, 
 	  given the node to be inserted or deleted.
+	  
 	3. Reverse Traversal: Reversing a doubly linked list is more straightforward compared to a singly linked list.
 
 Disadvantages of using a doubly linked list:
-	1. Increased Memory Usage: Doubly linked lists consume slightly more memory,
+
+	1. Increased Memory Usage: Doubly linked lists consume slightly more memory,	
        	compared to singly linked lists due to the additional pointer in each node.
+	
 	2. Increased Complexity: The presence of two pointers in each node increases
        	the complexity of implementing and maintaining a doubly linked list compared to a singly linked list.
 
