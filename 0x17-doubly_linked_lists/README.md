@@ -5,16 +5,21 @@ A doubly linked list is a type of linked list where each node contains two point
   This allows traversal in both forward and backward directions.
 
 Key features of a doubly linked list:
+
 	1. Node Structure: Each node in a doubly linked list contains 
-	two pointers: one pointing to the previous node and another pointing to the next node.
+		two pointers: one pointing to the previous node and another pointing to the next node.
+	
 	2. Head and Tail: A doubly linked list typically has a head pointer 
-	that points to the first node and a tail pointer that points to the last node.
+		that points to the first node and a tail pointer that points to the last node.
+	
 	3. Bidirectional Traversal: With the help of the previous and next pointers, 
-	it is possible to traverse the list in both forward and backward directions.
+		it is possible to traverse the list in both forward and backward directions.
+	
 	4. Insertion and Deletion: Nodes can be easily inserted or deleted 
-	from a doubly linked list by updating the appropriate pointers.
+		from a doubly linked list by updating the appropriate pointers.
+	
 	5. Memory Overhead: Due to the presence of an additional pointer in each node, 
-	a doubly linked list consumes slightly more memory compared to a singly linked list.
+		a doubly linked list consumes slightly more memory compared to a singly linked list.
 
 Advantages of using a doubly linked list:
 1. Bidirectional Traversal: 
