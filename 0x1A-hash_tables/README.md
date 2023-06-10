@@ -93,7 +93,7 @@ Function Prototypes:
   * [6-hash_table_delete.c](./6-hasb_table_delete.c): C function that deletes a
   `hash_table_t` hash table.
 
-* **7. $ht['Betty'] = 'Holberton'**
+* **7. $ht['Betty'] = 'Cool'**
   * [100-sorted_hash_table.c](./100-sorted_hash_table.c): C functions that define a sorted
   hash table `shash_table_t`.
     * Identical in function to a `hash_table_t` hash table except key/value
